@@ -30,7 +30,7 @@ const SOLUTIONS_LINKS = [
   "Integrações",
 ];
 
-const INSTITUTIONAL_LINKS = ["Sobre nós", "Cases", "Blog", "Trabalhe conosco"];
+const INSTITUTIONAL_LINKS = ["Produtos", "Cases", "Blog", "Trabalhe conosco"];
 
 export default function Footer() {
   return (
@@ -90,9 +90,9 @@ export default function Footer() {
           <div>
             <h4 className="eyebrow text-mist-faint mb-4">Contato</h4>
             <ul className="flex flex-col gap-2.5 text-sm text-mist-muted">
-              <li>[PREENCHER e-mail de contato]</li>
+              <li>contato@csync.com.br</li>
               <li>[PREENCHER telefone / WhatsApp]</li>
-              <li>[PREENCHER endereço]</li>
+              <li>Rua dos Mandacarus, 501, ap. 1406-B — Passaré, Fortaleza/CE</li>
             </ul>
           </div>
         </div>

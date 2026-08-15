@@ -105,7 +105,7 @@ export default function Hero() {
           <h1 className="mt-5 font-display font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] tracking-tight">
             Tecnologia que <span className="text-gradient">conecta.</span>
             <br />
-            Soluções que <span className="text-gradient">evoluem.</span>
+            Soluções que <span className="text-gradient">transformam.</span>
           </h1>
           <p className="mt-6 text-mist-muted text-lg leading-relaxed max-w-lg">
             Desenvolvemos IAs de atendimento e sistemas inteligentes que automatizam
