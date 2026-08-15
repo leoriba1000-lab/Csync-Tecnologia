@@ -94,7 +94,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-mist-muted">
               <li>contato@csync.com.br</li>
               <li>(85) 99269-7280</li>
-              <li>Rua dos Mandacarus, 501, ap. 1406-B — Passaré, Fortaleza/CE</li>
+              <li>Rua dos Mandacarus, 501, 1406 B — Passaré, Fortaleza/CE</li>
             </ul>
           </div>
         </div>
