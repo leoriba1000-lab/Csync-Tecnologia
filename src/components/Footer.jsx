@@ -45,13 +45,15 @@ export default function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-3">
               {[
-                { Icon: InstagramIcon, label: "Instagram da Csync" },
-                { Icon: LinkedinIcon, label: "LinkedIn da Csync" },
-                { Icon: MessageCircle, label: "WhatsApp da Csync" },
-              ].map(({ Icon, label }) => (
+                { Icon: InstagramIcon, label: "Instagram da Csync", href: "#" },
+                { Icon: LinkedinIcon, label: "LinkedIn da Csync", href: "#" },
+                { Icon: MessageCircle, label: "WhatsApp da Csync", href: "https://wa.me/5585992697280" },
+              ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   className="h-9 w-9 rounded-full border border-ink-line flex items-center justify-center text-mist-faint hover:text-white hover:border-sync-cyan/60 transition-colors"
                 >
@@ -91,7 +93,7 @@ export default function Footer() {
             <h4 className="eyebrow text-mist-faint mb-4">Contato</h4>
             <ul className="flex flex-col gap-2.5 text-sm text-mist-muted">
               <li>contato@csync.com.br</li>
-              <li>[PREENCHER telefone / WhatsApp]</li>
+              <li>(85) 99269-7280</li>
               <li>Rua dos Mandacarus, 501, ap. 1406-B — Passaré, Fortaleza/CE</li>
             </ul>
           </div>
