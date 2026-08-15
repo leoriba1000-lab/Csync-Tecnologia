@@ -18,7 +18,7 @@ export default function Products() {
         <div className="mt-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-display font-semibold text-3xl md:text-4xl tracking-tight">
-              O <span className="text-gradient">Vestia</span> é o nosso primeiro produto
+              O <span className="text-gradient">Vestia</span> é feito pela Csync
             </h2>
             <p className="mt-5 text-mist-muted leading-relaxed max-w-lg">
               Uma plataforma completa de gestão e atendimento por inteligência artificial

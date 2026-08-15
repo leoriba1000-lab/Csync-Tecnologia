@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
+import Case from "./components/Case";
 import Solutions from "./components/Solutions";
 import Process from "./components/Process";
 import DashboardMockup from "./components/DashboardMockup";
@@ -17,6 +18,8 @@ function App() {
         <div id="sobre">
           <Products />
         </div>
+
+        <Case />
 
         <Solutions />
 

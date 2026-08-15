@@ -30,7 +30,12 @@ const SOLUTIONS_LINKS = [
   "Integrações",
 ];
 
-const INSTITUTIONAL_LINKS = ["Produtos", "Cases", "Blog", "Trabalhe conosco"];
+const INSTITUTIONAL_LINKS = [
+  { label: "Vestia", href: "#sobre" },
+  { label: "Case", href: "#case" },
+  { label: "Blog", href: "/blog.html" },
+  { label: "Trabalhe conosco", href: "mailto:contato@csync.com.br?subject=Trabalhe%20conosco" },
+];
 
 export default function Footer() {
   return (
@@ -79,10 +84,10 @@ export default function Footer() {
           <div>
             <h4 className="eyebrow text-mist-faint mb-4">Institucional</h4>
             <ul className="flex flex-col gap-2.5">
-              {INSTITUTIONAL_LINKS.map((l) => (
-                <li key={l}>
-                  <a href="#sobre" className="text-sm text-mist-muted hover:text-mist transition-colors">
-                    {l}
+              {INSTITUTIONAL_LINKS.map(({ label, href }) => (
+                <li key={label}>
+                  <a href={href} className="text-sm text-mist-muted hover:text-mist transition-colors">
+                    {label}
                   </a>
                 </li>
               ))}
