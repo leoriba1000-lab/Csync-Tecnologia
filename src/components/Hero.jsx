@@ -1,4 +1,4 @@
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import useReveal from "../hooks/useReveal";
 
 function SyncComposition() {
@@ -120,11 +120,10 @@ export default function Hero() {
               <ArrowRight size={16} />
             </a>
             <a
-              href="#como-funciona"
+              href="#beneficios"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-line px-7 py-3.5 text-sm font-medium text-mist hover:border-sync-cyan/60 hover:text-white transition-colors"
             >
-              <PlayCircle size={16} />
-              Ver como funciona
+              Como funciona
             </a>
           </div>
         </div>
