@@ -72,14 +72,14 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-mist-muted">
               <li>contato@csync.com.br</li>
               <li>(85) 99269-7280</li>
-              <li>Rua dos Mandacarus, 501, Apto 1406 – Torre B — Passaré, Fortaleza/CE</li>
+              <li>Rua dos Mandacarus, 501, Apto 1406 – Torre B — Passaré, Fortaleza/CE, CEP 60744-030</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 pt-6 border-t border-ink-line flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-mist-faint">
-          <p>© {new Date().getFullYear()} Csync Tecnologia. Todos os direitos reservados.</p>
-          <p className="font-mono">CNPJ 68.542.808/0001-34</p>
+          <p>© {new Date().getFullYear()} Csync Tecnologia Ltda. Todos os direitos reservados.</p>
+          <p className="font-mono">CSYNC TECNOLOGIA LTDA · CNPJ 68.542.808/0001-34</p>
         </div>
       </div>
     </footer>
