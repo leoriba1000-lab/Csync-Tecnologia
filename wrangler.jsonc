@@ -1,0 +1,27 @@
+{
+  // Deploy do site institucional da Csync (Cloudflare Workers).
+  //
+  // POR QUE ESTE ARQUIVO EXISTE
+  // O projeto na Cloudflare roda `npx wrangler versions upload` como deploy
+  // command, e esse comando não tem como adivinhar o que enviar: sem config, ele
+  // falha com "Missing entry-point to Worker script or to assets directory".
+  // Era o que vinha acontecendo — o build passava, o deploy quebrava, e o site
+  // continuava no ar servindo a última versão que subiu com sucesso. Falha
+  // silenciosa: nada quebra na cara, o conteúdo só para de atualizar.
+  //
+  // `name` PRECISA bater com o nome do Worker já existente (csync-tecnologia),
+  // senão o deploy cria um Worker novo em vez de atualizar o que está no ar.
+  "name": "csync-tecnologia",
+  "compatibility_date": "2026-09-09",
+
+  // Site estático: não há Worker script, só a pasta que o `vite build` gera.
+  // Por isso `assets` sem `main` — é o formato que a própria Cloudflare sugere
+  // no log de erro para upload de diretório.
+  //
+  // O `dist/` sai do build com index.html, blog.html, privacidade.html,
+  // termos-de-uso.html, favicon e assets/. As duas páginas legais vêm de
+  // public/, que o Vite copia sem processar.
+  "assets": {
+    "directory": "./dist"
+  }
+}
