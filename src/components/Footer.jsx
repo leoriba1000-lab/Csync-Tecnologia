@@ -15,6 +15,7 @@ const INSTITUTIONAL_LINKS = [
   { label: "Trabalhe conosco", href: "mailto:contato@csync.com.br?subject=Trabalhe%20conosco" },
   { label: "Política de Privacidade", href: "/privacidade.html" },
   { label: "Termos de Uso", href: "/termos-de-uso.html" },
+  { label: "Exclusão de Dados", href: "/exclusao-de-dados.html" },
 ];
 
 export default function Footer() {
